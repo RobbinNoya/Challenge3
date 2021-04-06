@@ -2,16 +2,24 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="JS/api.js"></script>
-        <script src="JS/config.js"></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
         <title>XT2 Challenge 3</title>
     </head>
     <body>
-        <div class="header">
-            <button onclick="displayData()">img</button>
+        <div id='map'></div>
+        <div class="zoek">
+            <div class="input">
+                <p>Check de huidige huidige weersomstandigheden in de plaats waar je wilt landen</p>
+            </div>
+            <div class="resultaat">
+                <h1 class="name" id="name"></h1>
+                <p class="temp"></p>
+                <p class="clouds"></p>
+                <p class="desc"></p>
+            </div>
         </div>
-        <div id="content">
-
-        </div>
+        <script src="js/api.js"></script>
     </body>
 </html>

@@ -1,0 +1,63 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Orbitron;
+    font-size: 16px;
+}
+#map {
+    width: 80vw; 
+    height: 60vh;
+    margin-bottom: 10px;
+}
+.input {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.zoek{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(231, 231, 231);
+    padding: 10px;
+}
+
+@media (max-width: 375px){
+    body{
+        margin-left: 0px;
+    }
+    .zoek{
+        width: 90%;
+    }
+}
+
+@media (max-height: 453px) and (max-width: 812px) and (min-width:376px ){
+    #map {
+        width: 50%; 
+        height: 95vh;
+    }
+    .zoek{
+        width: 40%;
+        margin-left: 10px;
+        height: 90vh;
+    }
+    
+}
+
+@media (min-height: 454px) and (min-width: 376px) and (max-width: 1024px) {
+    #map {
+        height: 60vh;
+    }
+    .zoek{
+        width: 58vh;
+        height: 35vh;
+        margin-top: 5px;
+    }
+    .resultaat {
+        font-size: 20px;
+    }
+}
